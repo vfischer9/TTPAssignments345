@@ -1,0 +1,17 @@
+*{
+    background-color: lavenderblush;
+    
+}
+
+input, button{
+    background-color: white;
+}
+
+
+span{
+    font-style: italic;
+}
+
+.Question2, .Question3{
+    text-align: center;
+}
