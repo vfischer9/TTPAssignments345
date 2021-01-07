@@ -16,10 +16,10 @@ butt2.onclick = function(){
 }
 
 //Question 2: (commented out because it is annoying)
-// const hover = document.getElementById('dontHover');
-// hover.onmouseover = function(){
-//     alert('Hey, I told you not to hover over me!')
-// }
+const hover = document.getElementById('dontHover');
+hover.onmouseover = function(){
+    alert('Hey, I told you not to hover over me!')
+}
 
 //Question 3/4:
 document.getElementById('submission').addEventListener("click", function(event){
