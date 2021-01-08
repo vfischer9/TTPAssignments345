@@ -12,3 +12,15 @@ function addRow(){
     grid.appendChild(newRow);
     numRows++;
 }
+
+function addCol(){
+    let rows = document.querySelectorAll("tr");
+    let rowIndex = 0;
+
+    for(let i = 0; i < numRows; i++) {
+        let cell = document.createElement("td");
+        rows[rowIndex].appendChild(cell);
+        rowIndex++;
+    }
+    numCols++;
+}
