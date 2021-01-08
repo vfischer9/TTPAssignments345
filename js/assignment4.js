@@ -1,6 +1,5 @@
 //Question 1:
 const butt1 = document.getElementById('im-right');
-console.log(butt1);
 
 const butt1Text = document.getElementById('im-right-text');
 
@@ -9,7 +8,6 @@ butt1.onclick = function(){
 }
 
 const butt2 = document.getElementById('no-im-right');
-console.log(butt2);
 
 butt2.onclick = function(){
     butt1Text.innerText = 'No, Im right!';
@@ -32,3 +30,15 @@ document.getElementById('submission').addEventListener("click", function(event){
         alert('Incorrect password')
     }
 });
+
+//BONUS:
+const butt3 = document.getElementById('findVol');
+butt3.onclick = function(){
+    const volume = document.getElementById('result');
+    const radius = document.getElementById('radius').value;
+    const pi = 3.14159265359;
+    const newRadius = Math.pow(radius, 3);
+    volume.innerText = "Volume: " + 4/3 * pi * newRadius;
+}
+
+

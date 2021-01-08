@@ -8,10 +8,10 @@ input, button{
 }
 
 
-span{
+.im-right-text{
     font-style: italic;
 }
 
-.Question2, .Question3{
+.Question2, .Question3, .BonusQ{
     text-align: center;
 }
