@@ -24,3 +24,9 @@ function addCol(){
     }
     numCols++;
 }
+
+// function removeRow(){
+//     let rowIndex = 0;
+//     document.getElementById("grid").deleteRow(rowIndex);
+//     rowIndex--;
+// }
