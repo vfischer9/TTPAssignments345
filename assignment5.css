@@ -1,0 +1,18 @@
+*{
+    background-color: lavenderblush;
+}
+
+button{
+    background-color: white;
+    margin-top: 5px;
+}
+
+td {
+    height: 20px;
+    width: 20px;
+    background-color: pink;
+}
+
+h2{
+    margin-bottom: 5px;
+}
