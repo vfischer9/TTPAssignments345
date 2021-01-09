@@ -24,3 +24,9 @@ function addCol(){
     }
     numCols++;
 }
+
+function removeRow(){
+    let grid = document.getElementById('grid');
+    grid.deleteRow(numRows-1);
+    numRows--;
+}
