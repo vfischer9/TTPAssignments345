@@ -83,7 +83,7 @@ function colorChanged() {
 }
 
 //issue7
-function fillAll() {
+function fillAllBlank() {
     let cells = document.getElementsByTagName('td');
     let cellsList = [...cells];
 
@@ -92,6 +92,17 @@ function fillAll() {
     });
 
     uncoloredCells.forEach(cell => {
+        cell.style.backgroundColor = chosenColor;
+        cell.classList.remove('isNotColored');
+    })
+}
+
+//issue8
+function fillAll(){
+    let cells = document.getElementsByTagName('td');
+    let cellsList = [...cells];
+
+    cellsList.forEach(cell => {
         cell.style.backgroundColor = chosenColor;
         cell.classList.remove('isNotColored');
     })
