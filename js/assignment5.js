@@ -30,3 +30,14 @@ function removeRow(){
     grid.deleteRow(numRows-1);
     numRows--;
 }
+
+function removeCol(){
+    let rows = document.querySelectorAll("tr");
+    let rowIndex = 0;
+    for(let i = 0; i < numRows; i++) {
+        rows[rowIndex].removeChild(rows[rowIndex].lastChild);
+        rowIndex++;
+    }
+
+    numCols--;
+}
