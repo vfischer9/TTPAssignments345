@@ -8,16 +8,18 @@
 </head>
 <body>
     
-    <h2>Modify The Below Grid </h2>
+    <h2>Modify The Grid Below </h2>
 
     <button onclick="addRow()">Add a Row</button>
     <button onclick="addCol()">Add a Column</button>
     <button onclick="removeRow()">Remove a Row</button>
     <button onclick="removeCol()">Remove a Column</button>
 
+    <!-- issue5 -->
     <div id='colors'>
         <span>Choose a color:</span>
-        <select onchange="selectColor(this.value)">
+        <select onchange="chooseColor(this.value)">
+            <option value="pink">Pink</option>
             <option value="red">Red</option>
             <option value="green">Green</option>
             <option value="blue">Blue</option>
@@ -27,6 +29,7 @@
         </select>
     </div>
 
+  
     <table id="grid">
         <tr>
             <td></td>
@@ -34,8 +37,6 @@
     </table>
 
     
-    
-
     
     <script src="/js/assignment5.js"></script>
 </body>
