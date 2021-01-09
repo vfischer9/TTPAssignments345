@@ -14,10 +14,12 @@
     <button onclick="addCol()">Add a Column</button>
     <button onclick="removeRow()">Remove a Row</button>
     <button onclick="removeCol()">Remove a Column</button>
+    <br>
+    <button onclick='fillAll()'>Fill All</button>
 
     <!-- issue5 -->
     <div id='colors'>
-        <span>Choose a color:</span>
+        <span>Choose individual cell color:</span>
         <select onchange="chooseColor(this.value)">
             <option value="pink">Pink</option>
             <option value="red">Red</option>
@@ -28,7 +30,6 @@
             <option value="black">Black</option>
         </select>
     </div>
-
   
     <table id="grid">
         <tr>
