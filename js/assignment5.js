@@ -59,7 +59,7 @@ const chooseColor = (color) => {
 function changeColor(cell) {
     cell.classList.add('isNotColored');
     cell.addEventListener('click', colorChanged);
-    
+
     cell.addEventListener('mousedown', (e) => {
         cellColored = true;
   });
@@ -80,4 +80,19 @@ function changeColor(cell) {
 function colorChanged() {
   this.style.backgroundColor = chosenColor;
   this.classList.remove('isNotColored');
+}
+
+//issue7
+function fillAll() {
+    let cells = document.getElementsByTagName('td');
+    let cellsList = [...cells];
+
+    const uncoloredCells = cellsList.filter(cell => {
+        return cell.classList.contains('isNotColored');
+    });
+
+    uncoloredCells.forEach(cell => {
+        cell.style.backgroundColor = chosenColor;
+        cell.classList.remove('isNotColored');
+    })
 }
