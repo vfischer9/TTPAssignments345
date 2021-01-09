@@ -11,8 +11,15 @@ td {
     height: 20px;
     width: 20px;
     background-color: pink;
+    border-style: solid;
+    border-width: thin;
 }
 
 h2{
     margin-bottom: 5px;
+}
+
+table{
+    margin-top: 20px;
+    margin-left: 20px;
 }
