@@ -2,6 +2,7 @@ let numRows = 1;
 let numCols = 1;
 
 let cellColored = false;
+let dragColoring = false ;
 
 //issue1
 function addRow(){
@@ -60,6 +61,7 @@ function changeColor(cell) {
     cell.classList.add('isNotColored');
     cell.addEventListener('click', colorChanged);
 
+    //issue10
     cell.addEventListener('mousedown', (e) => {
         cellColored = true;
   });
@@ -108,6 +110,7 @@ function fillAll(){
     })
 }
 
+//issue9
 function clearAll() {
     let cells = document.getElementsByTagName('td');
     let cellsList = [...cells];
@@ -116,4 +119,14 @@ function clearAll() {
         cell.style.backgroundColor = 'pink';
         cell.classList.remove('isNotColored');
     })
+}
+
+
+//any starting cells
+let cells = document.getElementsByTagName('td');
+let cellList = [...cells];
+
+for (let i=0; i < cellList.length; i++) {
+    const cell = cellList[i];
+    changeColor(cell);
 }
