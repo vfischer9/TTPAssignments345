@@ -107,3 +107,13 @@ function fillAll(){
         cell.classList.remove('isNotColored');
     })
 }
+
+function clearAll() {
+    let cells = document.getElementsByTagName('td');
+    let cellsList = [...cells];
+
+    cellsList.forEach(cell => {
+        cell.style.backgroundColor = 'pink';
+        cell.classList.remove('isNotColored');
+    })
+}
